@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const link1 = "https://link1.com";
+const link2 = "https://link2.com";
+
+let visit = localStorage.getItem("visit");
+
+if (!visit) {
+    localStorage.setItem("visit","1");
+    location.replace(link1);
+} else if (visit === "1") {
+    localStorage.setItem("visit","2");
+    location.replace(link2);
+} else {
+    location.replace(link1);
+}
+</script>
+</head>
+<body></body>
+</html>
